@@ -26,4 +26,4 @@ test: test/test.c $(TARGET)
 	cd $(dir ${TEST}) && ./test && cd ..
 
 clean:
-	rm -rf $(OBJECT) $(TARGET) $(test) $(dir ${TEST})test.db
+	rm -rf $(OBJECT) $(TARGET) $(TEST) $(dir ${TEST})test.db
