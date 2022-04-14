@@ -20,8 +20,8 @@ tar -xf v4.6.5.tar.gz
 * Replace sqlite3 with wxSQLite3 and install
 
 ```
-cp v4.6.5/src/sqlite3mc_amalgamation.c sqlite-autoconf-3350100/sqlite3.c
-cp v4.6.5/src/sqlite3mc_amalgamation.h sqlite-autoconf-3350100/sqlite3.h
+cp wxsqlite3-4.6.5/src/sqlite3mc_amalgamation.c sqlite-autoconf-3350100/sqlite3.c
+cp wxsqlite3-4.6.5/src/sqlite3mc_amalgamation.h sqlite-autoconf-3350100/sqlite3.h 
 cd sqlite-autoconf-3350100
 ./configure && make && make install
 ```
