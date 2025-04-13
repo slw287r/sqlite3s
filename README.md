@@ -25,9 +25,11 @@ tar -xf wxsqlite3-4.9.12.tar.gz
 cp wxsqlite3-4.9.12/src/sqlite3mc_amalgamation.c sqlite-autoconf-3470000/sqlite3.c
 cp wxsqlite3-4.9.12/src/sqlite3mc_amalgamation.h sqlite-autoconf-3470000/sqlite3.h 
 cd sqlite-autoconf-3470000
+```
 
-# For arm64 macOS, update the following flags
-# LDFLAGS = -L/usr/local/lib -framework Security -framework Foundation
+## For arm64 macOS (M1-M4), update the following flags
+```
+LDFLAGS = -L/usr/local/lib -framework Security -framework Foundation
 ./configure && make && make install
 ```
 
