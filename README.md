@@ -3,6 +3,8 @@ sqlite3 lib with secure support for old computers.
 
 ---
 
+⚠️ using the old version in this repo for compatibility between Linux and macOS systems.
+
 For brandnew computers please try the latest solution provided by wxSQLite3:
 
 Updates on Nov 2024:
