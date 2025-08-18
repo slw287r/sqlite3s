@@ -13,7 +13,7 @@ $(TARGET): $(OBJECT)
 	ar rs $@ $<
 
 $(OBJECT): $(SOURCE)
-	$(CC) -c -o $@ $< -DSQLITE_WITHOUT_ZONEMALLOC
+	$(CC) -c -o $@ $< -DSQLITE_WITHOUT_ZONEMALLOC -DSQLITE_OMIT_LOAD_EXTENSION
 
 install: $(TARGET)
 	test -d $(PREFIX)/lib || mkdir -p $(PREFIX)/lib
